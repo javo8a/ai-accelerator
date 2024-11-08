@@ -2,7 +2,6 @@ kind: Secret
 apiVersion: v1
 metadata:
   name: minio-data-connection
-  namespace: standard-workbench
   labels:
     opendatahub.io/dashboard: 'true'
     opendatahub.io/managed: 'true'
