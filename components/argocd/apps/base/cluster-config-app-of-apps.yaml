@@ -13,7 +13,7 @@ spec:
   source:
     path: patch-me-see-overlays
     repoURL: https://github.com/javo8a/ai-accelerator
-    targetRevision: maas_test
+    targetRevision: feature/odf_and_anythingllm
   syncPolicy:
     automated:
       prune: false
