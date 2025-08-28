@@ -11,12 +11,12 @@ spec:
           image: registry.redhat.io/openshift4/ose-cli
           env:
             - name: selector
-              value: 'node-role.kubernetes.io/worker'
+              value: '!node-role.kubernetes.io/control-plane,node-role.kubernetes.io/worker'
           command:
             - /bin/bash
             - -c
             - |
-              node_count=$(oc get nodes --selector=${selector} --output name | wc -l)
+              node_count=$(oc get nodes --selector=${selector} -l '!node-role.kubernetes.io/control-plane' --output name | wc -l)
               if [ ${node_count} -lt 3 ]; then
                 echo "Not enough selected nodes present in cluster"
                 oc get nodes --selector=${selector}
