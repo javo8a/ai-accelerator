@@ -30,7 +30,6 @@ spec:
       from:
         kind: DockerImage
         name: 'quay.io/rh-aiservices-bu/anythingllm-workbench:1.2.2-1'
-      generation: 10
       importPolicy:
         importMode: Legacy
       referencePolicy:
@@ -44,7 +43,6 @@ spec:
       from:
         kind: DockerImage
         name: 'quay.io/rh-aiservices-bu/anythingllm-workbench:1.3'
-      generation: 12
       importPolicy:
         importMode: Legacy
       referencePolicy:
