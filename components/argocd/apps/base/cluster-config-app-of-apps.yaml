@@ -13,7 +13,7 @@ spec:
   source:
     path: patch-me-see-overlays
     repoURL: https://github.com/javo8a/ai-accelerator.git
-    targetRevision: odf_operator
+    targetRevision: with_odf
   syncPolicy:
     automated:
       prune: false
