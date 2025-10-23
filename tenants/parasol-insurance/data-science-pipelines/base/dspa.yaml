@@ -1,7 +1,7 @@
 apiVersion: datasciencepipelinesapplications.opendatahub.io/v1
 kind: DataSciencePipelinesApplication
 metadata:
-  name: dspa-parasol-insurance
+  name: dspa
   namespace: parasol-insurance
 spec:
   apiServer:
